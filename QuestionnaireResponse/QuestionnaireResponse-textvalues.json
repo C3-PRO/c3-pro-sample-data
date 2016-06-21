@@ -1,0 +1,84 @@
+{
+	"resourceType" : "QuestionnaireResponse",
+	"status" : "completed",
+	"questionnaire" : {
+		"reference" : "example-question-text-and-values"
+	},
+	"item" : [
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueString" : "Now this is a story about how, my life got flip-turned upside down."
+						}
+					],
+					"linkId" : "valText"
+				}
+			]
+		},
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueInteger" : 7
+						}
+					],
+					"linkId" : "valInteger"
+				}
+			]
+		},
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueDecimal" : 3.28
+						}
+					],
+					"linkId" : "valDecimal"
+				}
+			]
+		},
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueQuantity" : {
+								"unit" : "hours",
+								"value" : 4.5
+							}
+						}
+					],
+					"linkId" : "valQuantity"
+				}
+			]
+		},
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueDecimal" : 2
+						}
+					],
+					"linkId" : "intSlider1"
+				}
+			]
+		},
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueDecimal" : 6
+						}
+					],
+					"linkId" : "intSlider2"
+				}
+			]
+		}
+	]
+}

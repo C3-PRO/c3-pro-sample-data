@@ -1,0 +1,45 @@
+{
+	"resourceType" : "QuestionnaireResponse",
+	"status" : "completed",
+	"questionnaire" : {
+		"reference" : "example-question-dates"
+	},
+	"item" : [
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueDate" : "1976-04-01"
+						}
+					],
+					"linkId" : "dateDate"
+				}
+			]
+		},
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueDateTime" : "2016-06-21T14:25:55.3069Z"
+						}
+					],
+					"linkId" : "dateDateTime"
+				}
+			]
+		},
+		{
+			"item" : [
+				{
+					"answer" : [
+						{
+							"valueTime" : "09:25:00"
+						}
+					],
+					"linkId" : "dateTimeOfDay"
+				}
+			]
+		}
+	]
+}
