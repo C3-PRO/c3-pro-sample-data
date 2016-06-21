@@ -1,0 +1,38 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"status": "completed",
+	"questionnaire": {
+		"reference": "example-question-choice"
+	},
+	"group": {
+		"group": [
+			{
+				"question": [
+					{
+						"answer": [
+							{
+								"valueCoding": {
+									"code": "2",
+									"system": "http://sf-36.org/fhir/StructureDefinition/answers-3-levels"
+								}
+							}
+						],
+						"linkId": "choice-valueSet"
+					}
+				]
+			},
+			{
+				"question": [
+					{
+						"answer": [
+							{
+								"valueBoolean": 1
+							}
+						],
+						"linkId": "choice-boolean-1"
+					}
+				]
+			}
+		]
+	}
+}
