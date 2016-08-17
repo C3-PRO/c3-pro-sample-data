@@ -1,6 +1,6 @@
 {
-	"id": "example-question-choice",
 	"resourceType": "Questionnaire",
+	"id": "choices",
 	"status": "draft",
 	"title": "This survey contains samples to show how choices in FHIR Questionnaires translate to ResearchKit surveys",
 	"date": "2016-04-11",

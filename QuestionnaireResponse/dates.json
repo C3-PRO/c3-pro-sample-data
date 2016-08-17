@@ -2,7 +2,7 @@
 	"resourceType" : "QuestionnaireResponse",
 	"status" : "completed",
 	"questionnaire" : {
-		"reference" : "example-question-dates"
+		"reference" : "dates"
 	},
 	"item" : [
 		{

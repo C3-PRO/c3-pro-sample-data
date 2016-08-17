@@ -1,5 +1,9 @@
 {
 	"resourceType" : "QuestionnaireResponse",
+	"status" : "completed",
+	"questionnaire" : {
+		"reference" : "choices"
+	},
 	"item" : [
 		{
 			"item" : [
@@ -55,9 +59,5 @@
 				}
 			]
 		}
-	],
-	"status" : "completed",
-	"questionnaire" : {
-		"reference" : "example-question-choice"
-	}
+	]
 }

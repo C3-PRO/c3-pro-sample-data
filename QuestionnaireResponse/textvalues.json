@@ -2,7 +2,7 @@
 	"resourceType" : "QuestionnaireResponse",
 	"status" : "completed",
 	"questionnaire" : {
-		"reference" : "example-question-text-and-values"
+		"reference" : "text-and-values"
 	},
 	"item" : [
 		{
