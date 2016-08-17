@@ -1,0 +1,326 @@
+{
+	"resourceType": "Contract",
+	"id": "sample-consent-signed",
+	"type": {
+		"coding": [{
+			"code": "consent",
+			"system": "http://hl7.org/fhir/contracttypecodes"
+		}]
+	},
+	"issued": "2016-08-17",
+	"signer": [{
+		"extension": [
+			{
+				"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/consents-to-data-sharing",
+				"valueBoolean": true
+			}
+		],
+		"party": {
+			"reference": "Patient/RK201608XDH"
+		},
+		"signature": [
+			{
+				"type": [
+					{
+						"code": "1.2.840.10065.1.12.1.7",
+						"display": "Consent Signature",
+						"system": "http://hl7.org/fhir/ValueSet/signature-type"
+					}
+				],
+				"when": "2016-08-17T09:54:40Z",
+				"whoReference": {
+					"reference": "Patient/RK201608XDH"
+				}
+			}
+		],
+		"type": {
+			"code": "CONSENTER",
+			"display": "consenter",
+			"system": "http://hl7.org/fhir/ValueSet/contract-signer-type"
+		}
+	}],
+	"applies": {
+		"start": "2016-08-17T09:54:40Z"
+	},
+	"authority": [{
+		"reference": "#bch"
+	}],
+	"subject": [{
+		"reference": "#eligibility"
+	}],
+	"term": [
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "htmlContent",
+							"valueString": "<p>Today’s mobile devices (especially smartphones) are powerful ways to communicate new information to medical researchers. For this study, researchers at Boston Children’s Hospital are asking people with hepatitis&nbsp;C to make use of their smartphones to help report information about themselves that may improve how hepatitis&nbsp;C is treated.</p>"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "This simple walkthrough will help you to understand the study and give you the opportunity to consent to participate.",
+			"type": {
+				"coding": [
+					{
+						"code": "Overview",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		},
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "title",
+							"valueString": "Activities"
+						},
+						{
+							"url": "htmlContent",
+							"valueString": "<p>Once you have given your consent, you can start using this awesome app to:<ul><li>Answer survey questions about medications you are currently taking or have taken in the past.</li><li>Answer survey questions about your health and habits.</li></ul></p>"
+						},
+						{
+							"url": "image",
+							"valueString": "00_Blank_to_DataGathering"
+						},
+						{
+							"url": "animation",
+							"valueString": "00_Blank_to_DataGathering"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "The study app will ask you to respond to surveys.",
+			"type": {
+				"coding": [
+					{
+						"code": "Custom",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		},
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "title",
+							"valueString": "Data Gathering"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "Collected data may reveal how hepatitis C affects people in daily life, both subjectively and objectively.",
+			"type": {
+				"coding": [
+					{
+						"code": "DataGathering",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		},
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "title",
+							"valueString": "Privacy"
+						},
+						{
+							"url": "htmlContent",
+							"valueString": "<p>We will ask you about your health, your activities, your medications, and ways in which hepatitis&nbsp;C has impacted you. This information will be reported anonymously, which means that the researchers doing the study won’t know who you are.</p>"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "Your data will be sent to a secure database, your personal identity data like your name never leaves your phone.",
+			"type": {
+				"coding": [
+					{
+						"code": "Privacy",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		},
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "title",
+							"valueString": "Utilizing Data"
+						},
+						{
+							"url": "htmlContent",
+							"valueString": "<p>The results of this research may be published, including in research journals, and presented at research conferences so that others can learn about the results of this study. The results of the study will not be recorded in a way that identifies individual users.</p>"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "Your coded data will be used for research and results from this research may be published in research journals.",
+			"type": {
+				"coding": [
+					{
+						"code": "DataUse",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		},
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "title",
+							"valueString": "Time Commitment"
+						},
+						{
+							"url": "htmlContent",
+							"valueString": "<p>We will ask that you complete the main study survey <i>three times a year</i> (about once every 4 months). The survey typically takes 10-15 minutes to complete and the app will remind you on time.</p>"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "We will ask you to answer survey questions every few weeks, which should take you no more than 15 minutes.",
+			"type": {
+				"coding": [
+					{
+						"code": "TimeCommitment",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		},
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "title",
+							"valueString": "Study Surveys"
+						},
+						{
+							"url": "htmlContent",
+							"valueString": "<p>This awesome app will collect information on your health through short surveys that will include questions like:<ul><li>Which antiviral medication are you currently taking or have you taken in the past?</li><li>During the past seven days, how many hours did you miss from work because of problems associated with your hepatitis&nbsp;C?</li></ul></p>"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "We will ask you questions about your general well-being, medications you're taking and other health-related topics.",
+			"type": {
+				"coding": [
+					{
+						"code": "StudySurvey",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		},
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "title",
+							"valueString": "Study Dashboard"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "Your dashboard shows which tasks you have completed and when we'll be sending another survey.",
+			"type": {
+				"coding": [
+					{
+						"code": "StudyTasks",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		},
+		{
+			"extension": [
+				{
+					"extension": [
+						{
+							"url": "title",
+							"valueString": "Withdrawing"
+						},
+						{
+							"url": "htmlContent",
+							"valueString": "<p>If you start the research study but later do not wish to participate, you can use the “<i>Leave Study</i>” link in the Profile section of the app. You may choose to leave the study at any time, but this action cannot be undone.</p><p>The study investigators may also withdraw you from the study without your consent at any time for any reason, including if the study is cancelled.</p>"
+						}
+					],
+					"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/ORKConsentSection"
+				}
+			],
+			"text": "You may withdraw your consent and discontinue participation at any time.",
+			"type": {
+				"coding": [
+					{
+						"code": "Withdrawing",
+						"system": "http://researchkit.org/docs/Constants/ORKConsentSectionType"
+					}
+				]
+			}
+		}
+	],
+	"contained": [
+		{
+			"resourceType": "Organization",
+			"id": "bch",
+			"name": "Cool App Team"
+		},
+		{
+			"resourceType": "Group",
+			"id": "eligibility",
+			"type": "person",
+			"actual": false,
+			"characteristic": [
+				{
+					"code": {
+						"text": "Are you 18 years of age or older?"
+					},
+					"exclude": false,
+					"valueBoolean": true
+				},
+				{
+					"code": {
+						"text": "Have you been diagnosed with XYZ?"
+					},
+					"exclude": false,
+					"valueBoolean": true
+				},
+				{
+					"code": {
+						"text": "Can you read and understand English in order to provide informed consent and follow the instructions?"
+					},
+					"exclude": false,
+					"valueBoolean": true
+				},
+				{
+					"code": {
+						"text": "Do you live in the United States of America?"
+					},
+					"exclude": false,
+					"valueBoolean": true
+				}
+			]
+		}
+	]
+}
