@@ -2,7 +2,6 @@
 	"id": "example-question-choice",
 	"resourceType": "Questionnaire",
 	"status": "draft",
-	"title": "Choice Answers Examples",
 	"date": "2015-12-04",
 	"group": {
 		"title": "Sample Survey",
@@ -58,6 +57,7 @@
 				]
 			},
 			{
+				"linkId": "display-step",
 				"title": "Final Step",
 				"text": "Pressing “Done” will complete this survey."
 			}

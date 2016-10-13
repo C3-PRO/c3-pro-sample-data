@@ -1,0 +1,10 @@
+{
+	"resourceType": "Contract",
+	"id": "sample-consent",
+	"type": {
+		"coding": [{
+			"code": "consent",
+			"system": "http://hl7.org/fhir/contracttypecodes"
+		}]
+	}
+}
