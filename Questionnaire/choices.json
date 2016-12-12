@@ -6,6 +6,7 @@
 	"date": "2016-04-11",
 	"item": [
 		{
+			"linkId": "group-0",
 			"type": "group",
 			"item": [
 				{
@@ -64,6 +65,7 @@
 			]
 		},
 		{
+			"linkId": "final",
 			"text": "Final Step",
 			"type": "display",
 			"extension": [
