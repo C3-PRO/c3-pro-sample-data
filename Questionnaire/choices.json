@@ -39,6 +39,24 @@
 					]
 				},
 				{
+					"linkId": "choice-picker",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"text": "Simple Choice Picker",
+					"type": "choice",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+							"valueString": "A “choice” question, same as in step 1, but this time presented in a value picker"
+						}
+					]
+				},
+				{
 					"linkId": "choice-boolean-1",
 					"required": true,
 					"text": "Skip the Last Question?",
