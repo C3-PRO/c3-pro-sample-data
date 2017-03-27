@@ -5,8 +5,8 @@ This repository contains 🔥FHIR sample resources, as used by the _C3-PRO_ libr
 
 Since FHIR is still evolving there are different versions of the resources:
 
-- the `master` branch contains **DSTU-2** (v`1.0.2`) resources
-- the `develop` branch contains **STU-3 2016Sep** (v`1.6.0`) resources
+- the `master` branch contains **STU-3** (v`3.0.0`) resources
+- the `develop` branch may contain resources of a newer FHIR version
 
 
 Questionnaire
@@ -33,7 +33,7 @@ We use our own simple JSON format to transmit both the RSA-encrypted random AES 
     "message": "{{ AES-encrypted fhir resource, base64 encoded }}",
     "symmetric_key": "{{ RSA-encrypted AES key used to encrypt `message`, base64 encoded }}",
     "key_id": "{{ RSA key id used to encrypt `symmetric_key` }}",
-    "version": "{{ FHIR version, `dstu2-0.5.0` or `dstu2-1.0.2` }}"
+    "version": "{{ FHIR version, `dstu2-1.0.2` or `stu3-3.0.0` }}"
 }
 ```
 
